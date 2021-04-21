@@ -1,0 +1,178 @@
+<form class="main-form" action="">
+  <h2 class="main-form__title">FTL: Прямая машина</h2>
+
+  <fieldset class="main-form__fieldset fieldset">
+    <legend class="fieldset__legend mb16"><span class="circle-number">1</span>Маршрут</legend>
+
+    <div class="input-group flex mb16">
+      <label for="from" class="input-group__label mb8">Откуда</label>
+      <input type="text" id="from" class="input-group__input">
+    </div>
+
+    <div class="input-group flex">
+      <label for="where" class="input-group__label mb8">Куда</label>
+      <input type="text" id="where" class="input-group__input">
+    </div>
+  </fieldset>
+
+  <fieldset class="main-form__fieldset fieldset">
+    <legend class="fieldset__legend mb16"><span class="circle-number">2</span>Транспорт</legend>
+
+    <div class="fieldset__row flex">
+      <div class="select-group mr12">
+        <p class="select-group__heading mb8">Грузоподъемность</p>
+        <div class="select-group__select select-group__capacity" data-state="">
+          <div class="select-group__title select-group__title-capacity" data-default="none">Не выбрано</div>
+          <div class="select-group__content select-group__content-capacity">
+            <label class="select-group__label select-group__label-capacity" for="capacity-select-0">Не выбрано</label>
+            <input class="select-group__input select-group__input-capacity" id="capacity-select-0" type="radio" name="unselected" checked>
+
+            <label class="select-group__label select-group__label-capacity" for="capacity-select-1">10 тонн</label>
+            <input class="select-group__input select-group__input-capacity" id="capacity-select-1" type="radio" name="t10">
+
+            <label class="select-group__label select-group__label-capacity" for="capacity-select-2">15 тонн</label>
+            <input class="select-group__input select-group__input-capacity" id="capacity-select-2" type="radio" name="t15">
+
+            <label class="select-group__label select-group__label-capacity" for="capacity-select-3">20 тонн</label>
+            <input class="select-group__input select-group__input-capacity" id="capacity-select-3" type="radio" name="t20">
+          </div>
+        </div>
+      </div>
+
+      <div class="select-group">
+        <p class="select-group__heading mb8">Способ погрузки</p>
+        <div class="select-group__select select-group__loading" data-state="">
+          <div class="select-group__title select-group__title-loading" data-default="none">Не выбрано</div>
+          <div class="select-group__content select-group__content-loading">
+            <label class="select-group__label select-group__label-loading" for="loading-select-0">Не выбрано</label>
+            <input class="select-group__input select-group__input-loading" id="loading-select-0" type="radio" name="unselected" checked>
+
+            <label class="select-group__label select-group__label-loading" for="loading-select-1">Задняя</label>
+            <input class="select-group__input select-group__input-loading" id="loading-select-1" type="radio" name="back">
+
+            <label class="select-group__label select-group__label-loading" for="loading-select-2">Боковая</label>
+            <input class="select-group__input select-group__input-loading" id="loading-select-2" type="radio" name="side">
+
+            <label class="select-group__label select-group__label-loading" for="loading-select-3">Верхняя</label>
+            <input class="select-group__input select-group__input-loading" id="loading-select-3" type="radio" name="top">
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="main-form__fieldset fieldset">
+    <legend class="fieldset__legend mb16"><span class="circle-number">3</span>Груз</legend>
+
+    <div class="fieldset__row flex mb16">
+      <div class="select-group">
+        <p class="select-group__heading mb8">Тип груза</p>
+        <div class="select-group__select select-group__cargo" data-state="">
+          <div class="select-group__title select-group__title-cargo" data-default="none">Не выбрано</div>
+          <div class="select-group__content select-group__content-cargo">
+            <label class="select-group__label select-group__label-cargo" for="cargo-select-0">Не выбрано</label>
+            <input class="select-group__input select-group__input-cargo" id="cargo-select-0" type="radio" name="unselected" checked>
+
+            <label class="select-group__label select-group__label-cargo" for="cargo-select-1">Наливной</label>
+            <input class="select-group__input select-group__input-cargo" id="cargo-select-1" type="radio" name="liquid">
+
+            <label class="select-group__label select-group__label-cargo" for="cargo-select-2">Сборный</label>
+            <input class="select-group__input select-group__input-cargo" id="cargo-select-2" type="radio" name="solid">
+
+            <label class="select-group__label select-group__label-cargo" for="cargo-select-3">Скоропортящийся</label>
+            <input class="select-group__input select-group__input-cargo" id="cargo-select-3" type="radio" name="perish">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fieldset__row flex mb16">
+      <div class="select-group mr12">
+        <p class="select-group__heading mb8">Класс опасности</p>
+        <div class="select-group__select select-group__hazard" data-state="">
+          <div class="select-group__title select-group__title-hazard" data-default="none">Не выбрано</div>
+          <div class="select-group__content select-group__content-hazard">
+            <label class="select-group__label select-group__label-hazard" for="hazard-select-0">Не выбрано</label>
+            <input class="select-group__input select-group__input-hazard" id="hazard-select-0" type="radio" name="unselected" checked>
+
+            <label class="select-group__label select-group__label-hazard" for="hazard-select-1">Низкий</label>
+            <input class="select-group__input select-group__input-hazard" id="hazard-select-1" type="radio" name="low">
+
+            <label class="select-group__label select-group__label-hazard" for="hazard-select-2">Средний</label>
+            <input class="select-group__input select-group__input-hazard" id="hazard-select-2" type="radio" name="middle">
+
+            <label class="select-group__label select-group__label-hazard" for="hazard-select-3">Высокий</label>
+            <input class="select-group__input select-group__input-hazard" id="hazard-select-3" type="radio" name="high">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group__cargo-value flex">
+        <label for="cargo-value" class="input-group__label label__value mb8">Объявленная ценность, ₽</label>
+        <label for="cargo-value" class="input-group__label label__value--mob mb8">Объяв. ценность, ₽</label>
+        <input type="text" id="cargo-value" placeholder="≥ 1">
+      </div>
+    </div>
+
+    <div class="input-group input-group__temperature">
+      <div class="input-group__checkbox flex mb16">
+        <input type="checkbox" id="temperature" class="input-group__input">
+        <label for="temperature" class="input-group__label">Температурные режим</label>
+      </div>
+
+      <div class="input-group__temperature-row flex">
+        <div class="input-group__temperature flex mr12">
+          <label for="temp-from" class="input-group__label mb8">От <sup>o</sup>C</label>
+          <input type="number" id="temp-from" class="input-group__input-temp" name="temp-from" value="-20">
+        </div>
+
+        <div class="input-group__temperature flex">
+          <label for="temp-to" class="input-group__label mb8">До <sup>o</sup>C</label>
+          <input type="number" id="temp-to" class="input-group__input-temp" name="temp-to" value="23">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="main-form__fieldset fieldset">
+    <legend class="fieldset__legend mb16"><span class="circle-number">4</span>Время</legend>
+
+    <div class="input-group flex mb16">
+      <div class="label-group flex">
+        <span class="mb8">Когда прибыть на точку</span>
+
+        <span>700 км в день</span>
+      </div>
+
+      <div class="input-wrapper">
+        <input type="text" id="start-point" class="input-group__input input-group__input--route mb4" value="Адрес не указан">
+
+        <button type="button" class="input-group__btn" title="Выбрать стартовую точку" value="start-point" name="start-point">
+          Не выбрано
+        </button>
+      </div>
+
+      <div class="input-wrapper mb16">
+        <input type="text" id="finish-point" class="input-group__input input-group__input--route" value="Адрес не указан">
+
+        <button disabled type="button" class="input-group__btn" title="Выбрать конечную точку" value="destination" name="destination">
+          Не выбрано
+        </button>
+      </div>
+
+      <div class="input-group flex">
+        <label for="order-comment" class="input-group__label mb8">Комментарий к заказу</label>
+        <textarea
+          type="text" id="order-comment"
+          class="input-group__input input-group__input-textarea"
+          placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="main-form__description">
+    <p>
+      Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+    </p>
+  </div>
+</form>
